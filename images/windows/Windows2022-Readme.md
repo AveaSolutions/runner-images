@@ -1,12 +1,6 @@
-| Announcements |
-|-|
-| [[all OSs] Nodejs 14.x will be removed from the images on November, 26](https://github.com/actions/runner-images/issues/8779) |
-| [Major Refactoring of GitHub Actions Runner Images Repository](https://github.com/actions/runner-images/issues/8706) |
-| [[All OS] Android NDK r23 will be removed from images on November 13](https://github.com/actions/runner-images/issues/8383) |
-***
 # Windows Server 2022
 - OS Version: 10.0.20348 Build 2113
-- Image Version: 20231115.2.0
+- Image Version: dev
 
 ## Windows features
 - Windows Subsystem for Linux (WSLv1): Enabled
@@ -14,14 +8,14 @@
 ## Installed Software
 
 ### Language and Runtime
-- Bash 5.2.15(1)-release
+- Bash 5.2.21(1)-release
 - Go 1.20.11
-- Julia 1.9.3
-- Kotlin 1.9.20
+- Julia 1.9.4
+- Kotlin 1.9.21
 - LLVM 16.0.6
 - Node 18.18.2
 - Perl 5.32.1
-- PHP 8.2.12
+- PHP 8.2.13
 - Python 3.9.13
 - Ruby 3.0.6p216
 
@@ -29,13 +23,13 @@
 - Chocolatey 2.2.2
 - Composer 2.6.5
 - Helm 3.13.1
-- Miniconda 23.9.0 (pre-installed on the image but not added to PATH)
+- Miniconda 23.10.0 (pre-installed on the image but not added to PATH)
 - NPM 9.8.1
-- NuGet 6.7.0.127
+- NuGet 6.8.0.131
 - pip 23.3.1 (python 3.9)
 - Pipx 1.2.1
 - RubyGems 3.2.33
-- Vcpkg (build from commit 2b14b606c)
+- Vcpkg (build from commit cd5e746ec)
 - Yarn 1.22.21
 
 #### Environment variables
@@ -52,20 +46,20 @@
 
 ### Tools
 - 7zip 23.01
-- aria2 1.36.0
-- azcopy 10.21.1
+- aria2 1.37.0
+- azcopy 10.21.1 INFO: azcopy.exe 10.21.1: A newer version 10.21.2 is available to download 
 - Bazel 6.4.0
-- Bazelisk 1.18.0
+- Bazelisk 1.19.0
 - Bicep 0.23.1
 - Cabal 3.10.2.0
-- CMake 3.27.7
-- CodeQL Action Bundle 2.15.2
+- CMake 3.27.8
+- CodeQL Action Bundle 2.15.3
 - Docker 24.0.7
 - Docker Compose v1 1.29.2
-- Docker Compose v2 2.23.0
+- Docker Compose v2 2.23.3
 - Docker-wincred 0.8.0
 - ghc 9.8.1
-- Git 2.42.0.windows.2
+- Git 2.43.0.windows.1
 - Git LFS 3.4.0
 - ImageMagick 7.1.1-21
 - InnoSetup 6.2.2
@@ -80,7 +74,7 @@
 - NSIS 3.08
 - OpenSSL 1.1.1w
 - Packer 1.9.4
-- Pulumi 3.93.0
+- Pulumi 3.94.2
 - R 4.3.2
 - Service Fabric SDK 9.1.1436.9590
 - Stack 2.13.1
@@ -93,18 +87,18 @@
 - zstd 1.5.5
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.187
-- AWS CLI 2.13.34
-- AWS SAM CLI 1.102.0
+- Alibaba Cloud CLI 3.0.188
+- AWS CLI 2.13.38
+- AWS SAM CLI 1.103.0
 - AWS Session Manager CLI 1.2.497.0
 - Azure CLI 2.54.0
 - Azure DevOps CLI extension 0.26.0
 - GitHub CLI 2.39.1
 
 ### Rust Tools
-- Cargo 1.73.0
-- Rust 1.73.0
-- Rustdoc 1.73.0
+- Cargo 1.74.0
+- Rust 1.74.0
+- Rustdoc 1.74.0
 - Rustup 1.26.0
 
 #### Packages
@@ -112,15 +106,15 @@
 - cargo-audit 0.18.3
 - cargo-outdated 0.14.0
 - cbindgen 0.26.0
-- Clippy 0.1.73
+- Clippy 0.1.74
 - Rustfmt 1.6.0
 
 ### Browsers and Drivers
 - Google Chrome 119.0.6045.160
 - Chrome Driver 119.0.6045.105
-- Microsoft Edge 119.0.2151.58
-- Microsoft Edge Driver 119.0.2151.58
-- Mozilla Firefox 119.0.1
+- Microsoft Edge 119.0.2151.72
+- Microsoft Edge Driver 119.0.2151.72
+- Mozilla Firefox 120.0
 - Gecko Driver 0.33.0
 - IE Driver 4.14.0.0
 - Selenium server 4.15.0
@@ -166,10 +160,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 1.21.4
 
 #### Node.js
-- 14.21.3
 - 16.20.2
 - 18.18.2
-- 20.9.0
+- 20.10.0
 
 #### Python
 - 3.7.9
@@ -224,9 +217,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Nginx  | 1.25.3  | C:\tools\nginx-1.25.3\conf\nginx.conf | nginx       | Stopped       | 80         |
 
 ### Visual Studio Enterprise 2022
-| Name                          | Version        | Path                                                     |
-| ----------------------------- | -------------- | -------------------------------------------------------- |
-| Visual Studio Enterprise 2022 | 17.8.34309.116 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
+| Name                          | Version       | Path                                                     |
+| ----------------------------- | ------------- | -------------------------------------------------------- |
+| Visual Studio Enterprise 2022 | 17.8.34316.72 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
 
 #### Workloads, components and extensions
 | Package                                                                   | Version         |
@@ -508,8 +501,8 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Microsoft.VisualStudio.Workload.ManagedDesktop                            | 17.8.34129.139  |
 | Microsoft.VisualStudio.Workload.ManagedGame                               | 17.8.34129.139  |
 | Microsoft.VisualStudio.Workload.NativeCrossPlat                           | 17.8.34219.23   |
-| Microsoft.VisualStudio.Workload.NativeDesktop                             | 17.8.34129.139  |
-| Microsoft.VisualStudio.Workload.NativeGame                                | 17.8.34129.139  |
+| Microsoft.VisualStudio.Workload.NativeDesktop                             | 17.8.34316.72   |
+| Microsoft.VisualStudio.Workload.NativeGame                                | 17.8.34316.72   |
 | Microsoft.VisualStudio.Workload.NativeMobile                              | 17.8.34129.139  |
 | Microsoft.VisualStudio.Workload.NetCrossPlat                              | 17.8.34129.139  |
 | Microsoft.VisualStudio.Workload.NetWeb                                    | 17.8.34129.139  |
@@ -525,9 +518,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | wasm.tools                                                                | 8.0.23.53103    |
 | ProBITools.MicrosoftAnalysisServicesModelingProjects2022                  | 3.0.4           |
 | ProBITools.MicrosoftReportProjectsforVisualStudio2022                     | 3.0.1           |
-| SSIS.MicrosoftDataToolsIntegrationServices                                | 1.2             |
+| SSIS.MicrosoftDataToolsIntegrationServices                                | 1.3.1           |
 | VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects             | 2.0.1           |
-| Windows Driver Kit                                                        | 10.1.22621.382  |
+| Windows Driver Kit                                                        | 10.1.22621.2428 |
 | Windows Driver Kit Visual Studio Extension                                | 10.0.22621.0    |
 | Windows Software Development Kit                                          | 10.1.22621.2428 |
 | WixToolset.WixToolsetVisualStudio2022Extension                            | 1.0.0.22        |
@@ -560,7 +553,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - nbgv 3.6.133+2d32d93cb1
 
 ### PowerShell Tools
-- PowerShell 7.2.16
+- PowerShell 7.2.17
 
 #### Powershell Modules
 - Az: 9.3.0
@@ -569,10 +562,10 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - Az (Cached): 7.5.0.zip
 - Azure (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip
 - AzureRM (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip, 6.7.0.zip
-- AWSPowershell: 4.1.453
+- AWSPowershell: 4.1.459
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.9
-- Microsoft.Graph: 2.9.0
+- Microsoft.Graph: 2.10.0
 - Pester: 3.4.0, 5.5.0
 - PowerShellGet: 1.0.0.1, 2.2.5
 - PSScriptAnalyzer: 1.21.0
@@ -617,4 +610,3 @@ All other versions are saved but not installed.
 | mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022     | sha256:40e1acbcf70a5d9c5fd5fad045eca44da5c2ce090a1d4bae3f9aba3a089f0452  | 2023-11-14 |
 | mcr.microsoft.com/windows/nanoserver:ltsc2022                             | sha256:585a8381ae8ba03cd58c18917d17a6b3a0bdc1f80f294e33cee2eaab06be96ce  | 2023-11-09 |
 | mcr.microsoft.com/windows/servercore:ltsc2022                             | sha256:308ef3f8ee3e9c9a1bdec460009c1e6394b329db13eb3149461f8841be5b538a  | 2023-11-09 |
-

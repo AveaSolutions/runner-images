@@ -133,7 +133,6 @@
                 "IMAGEDATA_FILE={{user `imagedata_file`}}"
             ],
             "scripts": [
-                "{{ template_dir }}/../scripts/build/Configure-WindowsDefender.ps1",
                 "{{ template_dir }}/../scripts/build/Configure-PowerShell.ps1",
                 "{{ template_dir }}/../scripts/build/Install-PowerShellModules.ps1",
                 "{{ template_dir }}/../scripts/build/Install-WindowsFeatures.ps1",
